@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 import "./Header.scss";
 import { MdFoodBank} from "react-icons/md";
 import { IoMdMenu} from "react-icons/io";
-import { useSidebarContext } from '../../context/sidebarContext';
+import { useSidebarContext } from '../../context/sideBarContext';
 
 const Navbar = () => {
   const {openSidebar} = useSidebarContext();
