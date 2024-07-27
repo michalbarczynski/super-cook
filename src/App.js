@@ -8,6 +8,7 @@ import {
 import Header from "./components/Header/Header";
 import Sidebar from "./components/Sidebar/Sidebar";
 import CategoryPage from './pages/CategoryPage/CategoryPage';
+import MealDetailsPage from './pages/Meal/MealDetailsPage';
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       <Header />
       <Sidebar />
       <Routes>
-      <Route path = "/meal/category/:name" element = {<CategoryPage />} />
+        <Route path = "/meal/:id" element = {<MealDetailsPage />} />
+        <Route path = "/meal/category/:name" element = {<CategoryPage />} />
       </Routes>
     </BrowserRouter>
   );
