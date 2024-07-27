@@ -7,12 +7,18 @@ import {
 } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Sidebar from "./components/Sidebar/Sidebar";
+import CategoryPage from './pages/CategoryPage/CategoryPage';
+import MealDetailsPage from './pages/Meal/MealDetailsPage';
 
 function App() {
   return (
     <BrowserRouter>
       <Header />
       <Sidebar />
+      <Routes>
+        <Route path = "/meal/:id" element = {<MealDetailsPage />} />
+        <Route path = "/meal/category/:name" element = {<CategoryPage />} />
+      </Routes>
     </BrowserRouter>
   );
 }
