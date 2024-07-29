@@ -7,9 +7,7 @@ import { BiChevronsRight } from "react-icons/bi";
 import { AiOutlineCheckSquare } from 'react-icons/ai';
 
 const MealSingle = ({meal}) => {
-  console.log(meal);
   let tags = meal?.tags?.split(',');
-  console.log(meal);
   let instructions = meal?.instructions?.split('\r\n');
   instructions = instructions?.filter(instruction => instruction.length > 1);
 
