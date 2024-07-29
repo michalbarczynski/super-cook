@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import { useParams } from 'react-router-dom';
 import "./MealDetailsPage.scss";
-import Category from '../../components/Category/Category';
+import Category from '../../components/Category/CategoryList';
 import MealSingle from "../../components/Meal/MealSingle";
 import { useMealContext } from '../../context/mealContext';
 import { startFetchSingleMeal } from '../../actions/mealsActions';
@@ -12,7 +12,7 @@ const MealDetailsPage = () => {
 
   useEffect(() => {
     startFetchSingleMeal(dispatch, id);
-  }, [id]);
+  }, [id, dispatch]);
 
   let ingredientsArr = [], measuresArr = [], singleMeal = {};
   if(meal && meal?.length > 0){

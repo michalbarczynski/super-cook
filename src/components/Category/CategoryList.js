@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import "./Category.scss";
+import "./CategoryList.scss";
 
 const CategoryList = ({categories}) => {
   return (
