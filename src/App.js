@@ -10,6 +10,7 @@ import Sidebar from "./components/Sidebar/Sidebar";
 import CategoryPage from './pages/CategoryPage/CategoryPage';
 import MealDetailsPage from './pages/Meal/MealDetailsPage';
 import HomePage from './pages/HomePage/HomePage';
+import ErrorPage from './pages/ErrorPage/ErrorPage';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path = "/" element = {<HomePage />} />
         <Route path = "/meal/category/:name" element = {<CategoryPage />} />
         <Route path = "/meal/:id" element = {<MealDetailsPage />} />
+        <Route path = "*" element = {<ErrorPage />} />
       </Routes>
     </BrowserRouter>
   );
