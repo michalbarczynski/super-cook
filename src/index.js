@@ -1,14 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
-import { SidebarProvider } from './context/sideBarContext';
-import { MealProvider } from './context/mealContext';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import { SidebarProvider } from "./context/sideBarContext";
+import { MealProvider } from "./context/mealContext";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <SidebarProvider>
     <MealProvider>
       <App />
     </MealProvider>
-  </SidebarProvider>
+  </SidebarProvider>,
 );

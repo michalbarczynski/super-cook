@@ -1,29 +1,31 @@
-import React, {useEffect} from 'react';
-import { useParams } from 'react-router-dom';
+import React, { useEffect } from "react";
+import { useParams } from "react-router-dom";
 import "./MealDetailsPage.scss";
-import Category from '../../components/Category/CategoryList';
+import Category from "../../components/Category/CategoryList";
 import MealSingle from "../../components/Meal/MealSingle";
-import { useMealContext } from '../../context/mealContext';
-import { startFetchSingleMeal } from '../../actions/mealsActions';
+import { useMealContext } from "../../context/mealContext";
+import { startFetchSingleMeal } from "../../actions/mealsActions";
 
 const MealDetailsPage = () => {
-  const {id} = useParams();
+  const { id } = useParams();
   const { categories, dispatch, meal } = useMealContext();
 
   useEffect(() => {
     startFetchSingleMeal(dispatch, id);
   }, [id, dispatch]);
 
-  let ingredientsArr = [], measuresArr = [], singleMeal = {};
-  if(meal && meal?.length > 0){
-    for(let props in meal[0]){
-      if(props.includes('strIngredient')){
-        if(meal[0][props]) ingredientsArr.push(meal[0][props]);
+  let ingredientsArr = [],
+    measuresArr = [],
+    singleMeal = {};
+  if (meal && meal?.length > 0) {
+    for (let props in meal[0]) {
+      if (props.includes("strIngredient")) {
+        if (meal[0][props]) ingredientsArr.push(meal[0][props]);
       }
 
-      if(props.includes('strMeasure')){
-        if(meal[0][props]){
-          if(meal[0][props].length > 1){
+      if (props.includes("strMeasure")) {
+        if (meal[0][props]) {
+          if (meal[0][props].length > 1) {
             measuresArr.push(meal[0][props]);
           }
         }
@@ -41,16 +43,16 @@ const MealDetailsPage = () => {
       tags: meal[0]?.strTags,
       youtube: meal[0]?.strYoutube,
       ingredients: ingredientsArr,
-      measures: measuresArr
-    }
+      measures: measuresArr,
+    };
   }
 
   return (
-    <main className='main-content bg-whitesmoke'>
-      { <MealSingle meal = {singleMeal} /> }
-      { <Category categories={categories} /> }
+    <main className="main-content bg-whitesmoke">
+      {<MealSingle meal={singleMeal} />}
+      {<Category categories={categories} />}
     </main>
-  )
-}
+  );
+};
 
-export default MealDetailsPage
+export default MealDetailsPage;

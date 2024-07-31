@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import "./Header.scss";
 import { BsSearch } from "react-icons/bs";
-import { useMealContext } from '../../context/mealContext';
-import { useNavigate } from 'react-router-dom';
-import { startFetchMealsBySearch } from '../../actions/mealsActions';
+import { useMealContext } from "../../context/mealContext";
+import { useNavigate } from "react-router-dom";
+import { startFetchMealsBySearch } from "../../actions/mealsActions";
 
 const SearchForm = () => {
   const navigate = useNavigate();
@@ -19,7 +19,7 @@ const SearchForm = () => {
     } else {
       setErrorMsg("");
     }
-  }
+  };
 
   const handleSearchResult = (e) => {
     e.preventDefault();
@@ -29,23 +29,29 @@ const SearchForm = () => {
     } else {
       setErrorMsg("Please enter a valid search term.");
     }
-  }
+  };
 
   return (
-    <form className='search-form flex align-center' onSubmit={handleSearchResult}>
-      <input 
-        type="text" 
-        className='form-control-input text-dark-gray fs-15' 
-        placeholder='Search recipes here ...' 
+    <form
+      className="search-form flex align-center"
+      onSubmit={handleSearchResult}
+    >
+      <input
+        type="text"
+        className="form-control-input text-dark-gray fs-15"
+        placeholder="Search recipes here ..."
         value={searchTerm}
-        onChange={handleSearchTerm} 
+        onChange={handleSearchTerm}
       />
-      <button type="submit" className='form-submit-btn text-white text-uppercase fs-14'>
-        <BsSearch className='btn-icon' size={20} />
+      <button
+        type="submit"
+        className="form-submit-btn text-white text-uppercase fs-14"
+      >
+        <BsSearch className="btn-icon" size={20} />
       </button>
       {errorMsg && <p className="error-message">{errorMsg}</p>}
     </form>
-  )
-}
+  );
+};
 
 export default SearchForm;
