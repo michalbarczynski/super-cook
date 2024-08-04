@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/super-cook/static/css/main.190e4213.css",
+    "main.js": "/super-cook/static/js/main.4b7a87b1.js",
+    "static/media/food-1898194_1280.jpg": "/super-cook/static/media/food-1898194_1280.b89b5fea8cc5885c0211.jpg",
+    "static/media/loader.svg": "/super-cook/static/media/loader.0094418d0c1071f44bc3984e20bdeb2a.svg",
+    "index.html": "/super-cook/index.html",
+    "main.190e4213.css.map": "/super-cook/static/css/main.190e4213.css.map",
+    "main.4b7a87b1.js.map": "/super-cook/static/js/main.4b7a87b1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.190e4213.css",
+    "static/js/main.4b7a87b1.js"
+  ]
+}
