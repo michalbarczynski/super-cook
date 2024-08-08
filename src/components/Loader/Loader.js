@@ -3,7 +3,6 @@ import "./Loader.scss";
 import { loader_svg } from "../../utils/images";
 
 const Loader = () => {
-  console.log("weszło");
   return (
     <div className="loader my-5">
       <div className="container flex align-center justify-center">
