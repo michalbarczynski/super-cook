@@ -13,6 +13,10 @@
             <h2>Welcome to the my own simple version of Super-Coock Application!</h2>
             <p>This project allows users to search for meal recipes, browse by categories, and view detailed meal information using the <a href="https://www.TheMealDB.com/" target="_blank" class="highlight">TheMealDB API</a>. It's built with React, styled with SCSS, and uses Axios for API requests.</p>
         </div>
+        <div class="live-demo">
+            <h2>LIVE DEMO:</h2>
+            <a href="https://michalbarczynski.github.io/super-cook/" target="_blank">https://michalbarczynski.github.io/resume-portfolio/</a>
+        </div>
         <div class="content">
             <h2>Project Overview</h2>
             <p>My Meal Finder application provides an easy way for users to explore a variety of recipes. Key features include:</p>
