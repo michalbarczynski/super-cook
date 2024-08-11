@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/super-cook/homepage/static/css/main.aad30dc7.css",
-    "main.js": "/super-cook/homepage/static/js/main.a63095e6.js",
-    "static/media/food-1898194_1280.jpg": "/super-cook/homepage/static/media/food-1898194_1280.b89b5fea8cc5885c0211.jpg",
-    "static/media/loader.svg": "/super-cook/homepage/static/media/loader.0094418d0c1071f44bc3984e20bdeb2a.svg",
-    "index.html": "/super-cook/homepage/index.html",
-    "main.aad30dc7.css.map": "/super-cook/homepage/static/css/main.aad30dc7.css.map",
-    "main.a63095e6.js.map": "/super-cook/homepage/static/js/main.a63095e6.js.map"
+    "main.css": "/super-cook/static/css/main.190e4213.css",
+    "main.js": "/super-cook/static/js/main.5803ca6a.js",
+    "static/media/food-1898194_1280.jpg": "/super-cook/static/media/food-1898194_1280.b89b5fea8cc5885c0211.jpg",
+    "static/media/loader.svg": "/super-cook/static/media/loader.0094418d0c1071f44bc3984e20bdeb2a.svg",
+    "index.html": "/super-cook/index.html",
+    "main.190e4213.css.map": "/super-cook/static/css/main.190e4213.css.map",
+    "main.5803ca6a.js.map": "/super-cook/static/js/main.5803ca6a.js.map"
   },
   "entrypoints": [
-    "static/css/main.aad30dc7.css",
-    "static/js/main.a63095e6.js"
+    "static/css/main.190e4213.css",
+    "static/js/main.5803ca6a.js"
   ]
 }
