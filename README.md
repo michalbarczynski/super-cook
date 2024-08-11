@@ -51,7 +51,7 @@
                 <li><strong>Clone the repository:</strong></li>
                 <pre><code>git clone https://github.com/michalbarczynski/super-cook.git</code></pre>
                 <li><strong>Navigate to the project directory:</strong></li>
-                <pre><code>cd super-coock</code></pre>
+                <pre><code>cd super-cook</code></pre>
                 <li><strong>Install dependencies:</strong></li>
                 <pre><code>npm install</code></pre>
                 <li><strong>Start the development server:</strong></li>
