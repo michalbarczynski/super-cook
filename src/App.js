@@ -13,10 +13,10 @@ function App() {
       <Header />
       <Sidebar />
       <Routes>
-        <Route path="/homepage" element={<HomePage />} />
+        <Route path="*" element={<HomePage />} />
         <Route path="/meal/category/:name" element={<CategoryPage />} />
         <Route path="/meal/:id" element={<MealDetailsPage />} />
-        <Route path="*" element={<ErrorPage />} />
+        <Route path="/error" element={<ErrorPage />} />
       </Routes>
     </BrowserRouter>
   );
