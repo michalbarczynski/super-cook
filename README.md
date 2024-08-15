@@ -15,7 +15,7 @@
         </div>
         <div class="live-demo">
             <h2>LIVE DEMO:</h2>
-            <a href="https://michalbarczynski.github.io/super-cook/" target="_blank">https://michalbarczynski.github.io/resume-portfolio/</a>
+            <a href="https://michalbarczynski.github.io/super-cook/" target="_blank">https://michalbarczynski.github.io/super-cook/</a>
         </div>
         <div class="content">
             <h2>Project Overview</h2>
